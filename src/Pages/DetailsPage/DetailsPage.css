@@ -1,0 +1,72 @@
+.details-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #1a1a1d, #000000);
+  min-height: 100vh;
+}
+
+/* Personaje central */
+.center-character {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: #222;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 216, 255, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.center-character:hover {
+  transform: scale(1.03);
+}
+
+/* Transformaciones */
+.side-transformations {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 20%;
+  align-items: center;
+}
+
+.side-transformations > div {
+  background-color: #111;
+  border: 3px solid #ff4500;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.6);
+  max-width: 220px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.side-transformations > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 216, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .details-layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .center-character,
+  .side-transformations {
+    flex: 1 1 100%;
+  }
+
+  .side-transformations {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

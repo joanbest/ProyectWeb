@@ -1,0 +1,147 @@
+
+.container{
+  background-color: #2979FF;
+}
+.container-card {
+
+    background-color: #2979FF;
+    width: 21vw;
+    height: max-content;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: left;
+    overflow: visible;
+    position: relative;
+    gap: 100px; 
+    
+}
+
+.imagen{
+    height: 390px;
+    width: 100%;
+    transition: transform 0.5s;
+    position: absolute;
+    margin-top: 10px;
+    object-fit: contain;
+    top: -20px;
+    z-index: 0;
+}
+.imagen:hover{
+    transform: scale(1.2);
+}
+
+.text{
+  text-align: left;
+    padding: 10px;
+    position: relative;
+    height: auto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    
+}
+
+p span{
+    color: #fc7c05;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
+}
+
+.text p{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+
+.text h3{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.815);  
+
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #272b33;
+    padding: 20px;
+    
+}
+.container-img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-image: url('../../img/fondo-dragon.jpeg');
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+.card-back, .card-front{
+    transform-style: preserve-3d;
+
+}
+.card{
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .container-card {
+      width: 250px;
+    }
+    
+    .imagen {
+      max-height: 400px;
+    }
+    
+    .text h3 {
+      font-size: 1.3rem;
+    }
+    
+    .text p {
+      font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-card {
+      width: 250px;
+    }
+    
+   
+    .text h3 {
+      font-size: 1.3rem;
+    }
+    
+    .text p {
+      font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container-card {
+      width: 250px;
+    }
+    
+   
+    .text h3 {
+      font-size: 1.3rem;
+    }
+    
+    .text p {
+      font-size: 1rem;
+    }
+} 
+
+
+

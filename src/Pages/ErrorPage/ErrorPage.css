@@ -1,0 +1,61 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: radial-gradient(circle, #000000, #1a1a1a);
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .error-logo {
+    height: 30vh;
+    width: auto;
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .error-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f1c40f;
+  }
+  
+  .error-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .error-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .error-button:hover {
+    transform: scale(1.1);
+    background-color: #c0392b;
+  }
+  
+  /* Animaciones */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
